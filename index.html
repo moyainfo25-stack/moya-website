@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madi Opei Youth Association | MOYA</title>
 <meta name="description" content="Official website of Madi Opei Youth Association, empowering young people and transforming Madi Opei.">
+
 <style>
 :root {
   --green:#164d32;
@@ -72,6 +73,8 @@ nav a:hover {color:var(--gold)}
   text-decoration:none;
   font-weight:bold;
   margin:5px 3px;
+  border:0;
+  cursor:pointer;
 }
 .button:hover {opacity:.85}
 section {
@@ -164,6 +167,95 @@ footer {
   margin-top:35px;
 }
 footer p {margin:5px}
+
+/* ONLINE MEETINGS CENTRE */
+
+.meetings-intro {
+  background:linear-gradient(120deg,#164d32,#548d42);
+  color:white;
+  padding:30px;
+  border-radius:14px;
+  margin:20px 0;
+}
+.meetings-intro h3 {
+  color:white;
+  font-size:27px;
+}
+.meeting-card {
+  background:white;
+  padding:22px;
+  border-radius:12px;
+  box-shadow:0 3px 12px #00000012;
+  border-top:4px solid var(--green);
+  margin:15px 0;
+}
+.meeting-card h3 {margin-top:5px}
+.meeting-status {
+  display:inline-block;
+  background:#e5f2e6;
+  color:#164d32;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+}
+.meeting-date {
+  color:var(--green);
+  font-weight:bold;
+}
+.meeting-button {
+  display:inline-block;
+  background:#164d32;
+  color:white;
+  padding:11px 17px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:8px;
+}
+.meeting-button:hover {background:#548d42}
+.meeting-list {padding-left:20px}
+.meeting-form {
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 3px 12px #00000012;
+}
+.meeting-form label {
+  display:block;
+  font-weight:bold;
+  margin:13px 0 5px;
+  color:#164d32;
+}
+.meeting-form input,
+.meeting-form select,
+.meeting-form textarea {
+  width:100%;
+  padding:12px;
+  border:1px solid #ccd8ce;
+  border-radius:6px;
+  font:inherit;
+}
+.meeting-form button {
+  border:0;
+  cursor:pointer;
+  font:inherit;
+}
+.meeting-note {
+  background:#fff8e8;
+  border-left:4px solid #d6a744;
+  padding:15px;
+  border-radius:6px;
+  margin:15px 0;
+}
+.meeting-empty {
+  background:#edf4ed;
+  border-radius:10px;
+  padding:20px;
+  text-align:center;
+}
+.meeting-empty h3 {margin-top:0}
+
 @media(max-width:650px) {
   header h1 {font-size:22px}
   .hero {padding:55px 18px}
@@ -173,11 +265,15 @@ footer p {margin:5px}
   .chair {grid-template-columns:1fr;text-align:center}
   .chair img {max-width:180px;margin:auto}
   section {padding:32px 5%}
+  .meetings-intro {padding:22px}
+  .meeting-form {padding:17px}
 }
 </style>
 </head>
 
 <body>
+
+<!-- HEADER -->
 
 <header>
   <img class="logo" src="Screenshot_20261001-084457~2.jpg" alt="MOYA official logo">
@@ -185,6 +281,8 @@ footer p {margin:5px}
   <p><strong>MOYA</strong> | Empowering the Future</p>
   <p>Madi Opei Town Council, Lamwo District, Uganda</p>
 </header>
+
+<!-- NAVIGATION -->
 
 <nav>
   <a href="#home">Home</a>
@@ -195,21 +293,29 @@ footer p {margin:5px}
   <a href="#leadership">Leadership</a>
   <a href="#mentor-speech">Mentor's Speech</a>
   <a href="#annual-gathering">Gathering</a>
+  <a href="#online-meetings">Online Meetings</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<!-- HOME -->
 
 <div class="hero" id="home">
   <h2>Welcome to MOYA</h2>
   <p>United in purpose, committed to empowering young people and transforming our community.</p>
   <a class="button" href="#about">Discover MOYA</a>
   <a class="button" href="#contact">Get Involved</a>
+  <a class="button" href="#online-meetings">Online Meetings</a>
 </div>
+
+<!-- ABOUT -->
 
 <section id="about">
   <h2>Who We Are</h2>
   <p>Madi Opei Youth Association (MOYA) is a community-based youth association bringing together young people born in, living in and connected to Madi Opei and its surrounding communities. We believe that young people are important partners in community transformation and sustainable development.</p>
   <p>Guided by our motto, <strong>“Empowering the Future,”</strong> we promote unity, responsibility, leadership, skills development, education, agriculture and community participation.</p>
 </section>
+
+<!-- VISION -->
 
 <section id="vision">
   <div class="cards">
@@ -227,6 +333,8 @@ footer p {margin:5px}
     </div>
   </div>
 </section>
+
+<!-- ACTIVITIES -->
 
 <section id="activities">
   <h2>Our Activities and Programmes</h2>
@@ -258,6 +366,8 @@ footer p {margin:5px}
   </div>
 </section>
 
+<!-- PREMIER LEAGUE -->
+
 <section id="premier-league">
   <h2>Madi Opei Premier League</h2>
   <div class="event">
@@ -282,6 +392,8 @@ footer p {margin:5px}
     <p>The partnership Memorandum of Understanding (MOU) will be made available on this website once officially uploaded.</p>
   </div>
 </section>
+
+<!-- LEADERSHIP -->
 
 <section id="leadership">
   <h2>Meet Our Association Leadership</h2>
@@ -316,6 +428,8 @@ footer p {margin:5px}
   </div>
 </section>
 
+<!-- CHAIRPERSON MESSAGE -->
+
 <section id="chairperson-message">
   <h2>Message from the Chairperson</h2>
   <div class="chair">
@@ -329,6 +443,8 @@ footer p {margin:5px}
     </div>
   </div>
 </section>
+
+<!-- MENTOR -->
 
 <section id="mentor">
   <h2>Our Mentor</h2>
@@ -345,6 +461,8 @@ footer p {margin:5px}
     </div>
   </div>
 </section>
+
+<!-- MENTOR SPEECH -->
 
 <section id="mentor-speech">
   <h2>Our Mentor's Keynote Address</h2>
@@ -430,6 +548,8 @@ footer p {margin:5px}
   </div>
 </section>
 
+<!-- ANNUAL GATHERING -->
+
 <section id="annual-gathering">
   <h2>MOYA Annual Youth Gathering 2026</h2>
   <div class="event">
@@ -447,6 +567,289 @@ footer p {margin:5px}
     <p>Every contribution, whether big or small, makes a difference. Let us come together to make this gathering meaningful and impactful.</p>
   </div>
 </section>
+
+<!-- ONLINE MEETINGS CENTRE -->
+
+<section id="online-meetings">
+
+<h2>MOYA Online Meetings & Digital Communication Centre</h2>
+
+<div class="meetings-intro">
+  <h3>Connecting Youth Beyond Boundaries</h3>
+  <p>
+    Welcome to the official digital meeting centre of Madi Opei Youth
+    Association. This platform connects our members, executive,
+    committees and community stakeholders through technology,
+    communication and collective participation.
+  </p>
+  <p><strong>MOYA – Empowering the Future</strong></p>
+</div>
+
+<!-- 1 UPCOMING MEETINGS -->
+
+<h3>1. Upcoming Meetings</h3>
+<p>
+  Stay informed about upcoming MOYA executive meetings,
+  committee meetings, planning sessions and general youth meetings.
+</p>
+
+<div class="meeting-empty">
+  <h3>No Upcoming Meeting Published</h3>
+  <p>
+    Official meeting dates, times and joining instructions
+    will be published here by the MOYA administration.
+  </p>
+</div>
+
+<!-- 2 JOIN GOOGLE MEET -->
+
+<h3>2. Join Google Meet</h3>
+
+<div class="meeting-card">
+  <h3>Virtual Meeting Room</h3>
+  <p>
+    MOYA uses Google Meet to facilitate online discussions,
+    consultations, planning and meetings among members.
+  </p>
+  <p>
+    When a meeting is officially scheduled, its Google Meet
+    joining link will be published here.
+  </p>
+
+  <p><strong>Meeting joining instructions:</strong></p>
+  <ol class="meeting-list">
+    <li>Check the published meeting date and time.</li>
+    <li>Open the official Google Meet link.</li>
+    <li>Use your correct name when joining.</li>
+    <li>Keep your microphone muted when not speaking.</li>
+    <li>Respect the chairperson and other participants.</li>
+  </ol>
+
+  <p><strong>Google Meet:</strong>
+    <a href="https://meet.google.com/" target="_blank" rel="noopener">
+      Visit Google Meet
+    </a>
+  </p>
+
+  <p class="meeting-note">
+    The general Google Meet link above is not a meeting invitation.
+    Use the specific meeting link published by MOYA when available.
+  </p>
+</div>
+
+<!-- 3 ANNOUNCEMENTS -->
+
+<h3>3. Meeting Announcements</h3>
+
+<div class="meeting-card">
+  <h3>Official MOYA Meeting Notices</h3>
+  <p>
+    This section will communicate official meeting invitations,
+    changes in schedules, postponements and important updates.
+  </p>
+  <div class="meeting-empty">
+    <strong>No new meeting announcement</strong>
+    <p>Official notices will appear here when published.</p>
+  </div>
+</div>
+
+<!-- 4 AGENDAS -->
+
+<h3>4. Meeting Agendas</h3>
+
+<div class="meeting-card">
+  <h3>Matters for Discussion</h3>
+  <p>
+    Meeting agendas will be shared to help members prepare
+    and participate meaningfully in discussions.
+  </p>
+
+  <p><strong>Proposed standard MOYA agenda:</strong></p>
+  <ol class="meeting-list">
+    <li>Opening prayer and welcome remarks.</li>
+    <li>Introduction and confirmation of attendance.</li>
+    <li>Adoption of the previous meeting minutes.</li>
+    <li>Matters arising from previous meetings.</li>
+    <li>Chairperson's communication.</li>
+    <li>Secretary's report.</li>
+    <li>Treasurer's financial report, where applicable.</li>
+    <li>Updates on MOYA activities and programmes.</li>
+    <li>Agriculture, sports and community development updates.</li>
+    <li>New matters and members' contributions.</li>
+    <li>Resolutions and action points.</li>
+    <li>Closing remarks and prayer.</li>
+  </ol>
+  <p>
+    <strong>Note:</strong> The actual agenda will depend
+    on the purpose and nature of each meeting.
+  </p>
+</div>
+
+<!-- 5 MINUTES -->
+
+<h3>5. Meeting Minutes and Resolutions</h3>
+
+<div class="meeting-card">
+  <h3>Official Meeting Records</h3>
+  <p>
+    MOYA shall maintain records of meetings to promote
+    transparency, continuity and institutional accountability.
+  </p>
+
+  <p><strong>Each approved meeting record should contain:</strong></p>
+  <ul class="meeting-list">
+    <li>Meeting date, time and venue or online platform.</li>
+    <li>Names of members present and apologies.</li>
+    <li>Matters discussed.</li>
+    <li>Decisions and resolutions adopted.</li>
+    <li>Responsible persons and agreed deadlines.</li>
+    <li>Confirmation and approval of minutes.</li>
+  </ul>
+
+  <div class="meeting-empty">
+    <strong>No meeting minutes uploaded yet.</strong>
+    <p>
+      Approved minutes will be made available
+      in this section for members to review.
+    </p>
+  </div>
+</div>
+
+<!-- 6 REQUEST MEETING -->
+
+<h3>6. Request a Meeting</h3>
+
+<div class="meeting-form">
+  <h3>Submit a Meeting Request</h3>
+  <p>
+    Are you a MOYA member with an important issue,
+    proposal or concern that requires a meeting?
+    Submit your request for consideration by the association leadership.
+  </p>
+
+  <form id="moyaMeetingForm">
+
+    <label for="requestName">Your Full Name</label>
+    <input type="text" id="requestName"
+      placeholder="Enter your full name" required>
+
+    <label for="requestPhone">Your Telephone Number</label>
+    <input type="tel" id="requestPhone"
+      placeholder="Enter your phone number" required>
+
+    <label for="requestCategory">Meeting Category</label>
+    <select id="requestCategory" required>
+      <option value="">Select meeting category</option>
+      <option>General Youth Meeting</option>
+      <option>Executive Committee Meeting</option>
+      <option>Sports and Premier League Meeting</option>
+      <option>Agriculture and Development Meeting</option>
+      <option>Project and Partnership Meeting</option>
+      <option>Community Consultation</option>
+      <option>Other</option>
+    </select>
+
+    <label for="requestTitle">Proposed Meeting Title</label>
+    <input type="text" id="requestTitle"
+      placeholder="What is the meeting about?" required>
+
+    <label for="requestDate">Preferred Meeting Date</label>
+    <input type="date" id="requestDate" required>
+
+    <label for="requestReason">Reason for the Meeting</label>
+    <textarea id="requestReason" rows="5"
+      placeholder="Explain the purpose and issues to be discussed..."
+      required></textarea>
+
+    <button class="button" type="submit">
+      Submit Meeting Request via WhatsApp
+    </button>
+  </form>
+
+  <p class="meeting-note">
+    All meeting requests are proposals and are subject to
+    review and approval by the MOYA administration.
+    Submission does not automatically confirm a meeting.
+  </p>
+</div>
+
+<!-- 7 ATTENDANCE -->
+
+<h3>7. Meeting Attendance and Participation</h3>
+
+<div class="meeting-card">
+  <p>
+    MOYA encourages punctuality, active participation,
+    discipline and respect during all association meetings.
+  </p>
+  <p><strong>Our meeting principles:</strong></p>
+  <ul class="meeting-list">
+    <li>Respect different opinions.</li>
+    <li>Allow members to contribute constructively.</li>
+    <li>Maintain confidentiality where necessary.</li>
+    <li>Respect meeting procedures and leadership.</li>
+    <li>Follow up on assigned responsibilities.</li>
+  </ul>
+  <p>
+    Attendance registers will be maintained by the
+    meeting secretary or designated person.
+  </p>
+</div>
+
+<!-- 8 ACTION POINTS -->
+
+<h3>8. Meeting Action Points and Follow-up</h3>
+
+<div class="meeting-card">
+  <p>
+    Every meeting should result in clear decisions
+    and responsibilities.
+  </p>
+  <ul class="meeting-list">
+    <li>Agreed activity or resolution.</li>
+    <li>Person or committee responsible.</li>
+    <li>Expected completion date.</li>
+    <li>Progress and implementation status.</li>
+  </ul>
+</div>
+
+<!-- 9 ARCHIVES -->
+
+<h3>9. Meeting Archives</h3>
+
+<div class="meeting-card">
+  <h3>Our Institutional Records</h3>
+  <p>
+    Completed meetings, approved minutes, agendas and
+    important resolutions will be organised here
+    to preserve the association's institutional history.
+  </p>
+  <div class="meeting-empty">
+    <strong>Meeting archive coming soon</strong>
+    <p>Records will be added as meetings take place.</p>
+  </div>
+</div>
+
+<!-- ADMINISTRATION -->
+
+<div class="meeting-note">
+  <h3>Administrative Responsibility</h3>
+  <p>
+    The MOYA leadership and designated secretariat are
+    responsible for coordinating online meetings,
+    publishing official notices, preparing agendas,
+    maintaining minutes and communicating approved resolutions.
+  </p>
+  <p>
+    Official meeting information shall be published
+    in accordance with the association's constitution
+    and established administrative procedures.
+  </p>
+</div>
+
+</section>
+
+<!-- CONTACT -->
 
 <section id="contact">
   <h2>Contact MOYA</h2>
@@ -475,12 +878,56 @@ footer p {margin:5px}
   <p>We welcome your ideas, participation and support as we work together to empower the future.</p>
 </section>
 
+<!-- FOOTER -->
+
 <footer>
   <p><strong>MADI OPEI YOUTH ASSOCIATION (MOYA)</strong></p>
   <p>Empowering the Future</p>
   <p>United for a better and more prosperous Madi Opei.</p>
   <p>&copy; 2026 Madi Opei Youth Association. All rights reserved.</p>
 </footer>
+
+<!-- MEETING REQUEST FUNCTION -->
+
+<script>
+document.getElementById("moyaMeetingForm")
+.addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  const name = document.getElementById("requestName").value.trim();
+  const phone = document.getElementById("requestPhone").value.trim();
+  const category = document.getElementById("requestCategory").value;
+  const title = document.getElementById("requestTitle").value.trim();
+  const date = document.getElementById("requestDate").value;
+  const reason = document.getElementById("requestReason").value.trim();
+
+  if (!name || !phone || !category || !title || !date || !reason) {
+    alert("Please complete all meeting request fields.");
+    return;
+  }
+
+  const message =
+`MOYA MEETING REQUEST
+
+Full Name: ${name}
+Telephone: ${phone}
+Meeting Category: ${category}
+Proposed Title: ${title}
+Preferred Date: ${date}
+
+Reason for Meeting:
+${reason}
+
+I submit this request for consideration by the MOYA administration.`;
+
+  const whatsappURL =
+    "https://wa.me/256789813592?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+});
+</script>
 
 </body>
 </html>
