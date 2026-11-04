@@ -5,345 +5,482 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madi Opei Youth Association | MOYA</title>
+<meta name="description" content="Official website of Madi Opei Youth Association, empowering young people and transforming Madi Opei.">
 <style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,sans-serif;line-height:1.7;color:#26352b;background:#f5f8f5}
-header{background:#164d32;color:white;text-align:center;padding:28px 15px}
-.logo{width:115px;height:115px;object-fit:contain;border-radius:50%;background:white;padding:5px}
-header h1{margin:10px 0 0;font-size:28px}
-header p{margin:4px}
-nav{background:#103b29;padding:13px;text-align:center;position:sticky;top:0;z-index:10}
-nav a{color:white;text-decoration:none;margin:7px;font-weight:bold;display:inline-block}
-.hero{background:linear-gradient(120deg,#164d32,#548d42);color:white;text-align:center;padding:75px 20px}
-.hero h2{font-size:38px;margin:0}
-.hero p{font-size:19px;max-width:750px;margin:15px auto}
-section{padding:42px 7%;max-width:1150px;margin:auto}
-h2{color:#164d32}
-h3{color:#164d32}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:white;padding:22px;border-radius:12px;box-shadow:0 3px 12px #00000012}
-.profile{text-align:center}
-.profile img{width:145px;height:145px;object-fit:cover;border-radius:50%;border:4px solid #e1ebdf}
-.placeholder{width:145px;height:145px;border-radius:50%;background:#e6eee6;margin:auto;display:flex;align-items:center;justify-content:center;color:#54705b;font-size:14px;border:3px dashed #8da68e}
-.chair{display:grid;grid-template-columns:220px 1fr;gap:25px;align-items:center}
-.chair img{width:100%;max-width:220px;border-radius:12px}
-.mentor{background:#eaf2e9;border-radius:14px;padding:25px}
-.button{display:inline-block;background:#164d32;color:white;padding:10px 18px;border-radius:6px;text-decoration:none}
-footer{background:#103b29;color:white;text-align:center;padding:25px}
-footer a{color:white}
-@media(max-width:650px){.chair{grid-template-columns:1fr;text-align:center}.chair img{max-width:180px;margin:auto}.hero h2{font-size:30px}nav a{font-size:14px}}
+:root {
+  --green:#164d32;
+  --dark:#103b29;
+  --light:#edf4ed;
+  --gold:#d6a744;
+  --text:#29382e;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:85px}
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  line-height:1.7;
+  color:var(--text);
+  background:#f7f9f7;
+}
+header {
+  background:var(--green);
+  color:white;
+  text-align:center;
+  padding:28px 15px;
+}
+.logo {
+  width:115px;height:115px;
+  object-fit:contain;
+  border-radius:50%;
+  background:white;
+  padding:5px;
+}
+header h1 {margin:10px 0 0;font-size:27px}
+header p {margin:3px}
+nav {
+  background:var(--dark);
+  padding:10px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  display:inline-block;
+  margin:5px 8px;
+  font-size:14px;
+  font-weight:bold;
+}
+nav a:hover {color:var(--gold)}
+.hero {
+  background:linear-gradient(120deg,#164d32,#548d42);
+  color:white;
+  text-align:center;
+  padding:75px 20px;
+}
+.hero h2 {font-size:38px;margin:0;color:white}
+.hero p {font-size:19px;max-width:760px;margin:15px auto}
+.button {
+  display:inline-block;
+  background:var(--gold);
+  color:#183b27;
+  padding:10px 18px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:5px 3px;
+}
+.button:hover {opacity:.85}
+section {
+  padding:42px 7%;
+  max-width:1200px;
+  margin:auto;
+}
+section h2 {
+  color:var(--green);
+  border-bottom:3px solid var(--gold);
+  display:inline-block;
+  padding-bottom:5px;
+}
+h3 {color:var(--green)}
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card {
+  background:white;
+  padding:22px;
+  border-radius:12px;
+  box-shadow:0 3px 12px #00000012;
+}
+.profile {text-align:center}
+.profile img {
+  width:145px;height:145px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #e1ebdf;
+}
+.placeholder {
+  width:145px;height:145px;
+  border-radius:50%;
+  background:#e6eee6;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#54705b;
+  border:3px dashed #8da68e;
+}
+.chair {
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:25px;
+  align-items:center;
+}
+.chair img {
+  width:100%;
+  max-width:220px;
+  border-radius:12px;
+}
+.mentor {
+  background:var(--light);
+  border-left:5px solid var(--gold);
+  border-radius:12px;
+  padding:25px;
+}
+.speech {
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 3px 12px #00000010;
+}
+.speech h3 {margin-top:28px}
+blockquote {
+  border-left:4px solid var(--gold);
+  margin:20px 0;
+  padding:10px 20px;
+  background:#f4f7f2;
+  font-style:italic;
+}
+.event {
+  background:#edf4ed;
+  border-radius:12px;
+  padding:25px;
+}
+.date {
+  color:var(--green);
+  font-weight:bold;
+  font-size:19px;
+}
+footer {
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:28px 15px;
+  margin-top:35px;
+}
+footer p {margin:5px}
+@media(max-width:650px) {
+  header h1 {font-size:22px}
+  .hero {padding:55px 18px}
+  .hero h2 {font-size:30px}
+  nav {position:relative}
+  nav a {font-size:13px;margin:4px 6px}
+  .chair {grid-template-columns:1fr;text-align:center}
+  .chair img {max-width:180px;margin:auto}
+  section {padding:32px 5%}
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<img class="logo" src="Screenshot_20261001-084457~2.jpg" alt="MOYA official logo">
-<h1>MADI OPEI YOUTH ASSOCIATION</h1>
-<p><strong>MOYA</strong> | Empowering the Future</p>
-<p>Madi Opei Town Council, Lamwo District, Uganda</p>
+  <img class="logo" src="Screenshot_20261001-084457~2.jpg" alt="MOYA official logo">
+  <h1>MADI OPEI YOUTH ASSOCIATION</h1>
+  <p><strong>MOYA</strong> | Empowering the Future</p>
+  <p>Madi Opei Town Council, Lamwo District, Uganda</p>
 </header>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#vision">Our Vision</a>
-<a href="#activities">Activities</a>
-<a href="#leadership">Leadership</a>
-<a href="#contact">Contact</a>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#vision">Vision</a>
+  <a href="#activities">Activities</a>
+  <a href="#premier-league">Premier League</a>
+  <a href="#leadership">Leadership</a>
+  <a href="#mentor-speech">Mentor's Speech</a>
+  <a href="#annual-gathering">Gathering</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero" id="home">
-<h2>Welcome to MOYA</h2>
-<p>United in purpose, committed to empowering young people and transforming our community.</p>
-<a class="button" href="#about">Discover MOYA</a>
+  <h2>Welcome to MOYA</h2>
+  <p>United in purpose, committed to empowering young people and transforming our community.</p>
+  <a class="button" href="#about">Discover MOYA</a>
+  <a class="button" href="#contact">Get Involved</a>
 </div>
 
 <section id="about">
-<h2>Who We Are</h2>
-<p>Madi Opei Youth Association (MOYA) is a community-based youth association bringing together young people born in, living in and connected to Madi Opei and its surrounding communities. We believe that young people are important partners in community transformation and sustainable development.</p>
-<p>Guided by our motto, <strong>“Empowering the Future,”</strong> we promote unity, responsibility, leadership, skills development, education, agriculture and community participation.</p>
+  <h2>Who We Are</h2>
+  <p>Madi Opei Youth Association (MOYA) is a community-based youth association bringing together young people born in, living in and connected to Madi Opei and its surrounding communities. We believe that young people are important partners in community transformation and sustainable development.</p>
+  <p>Guided by our motto, <strong>“Empowering the Future,”</strong> we promote unity, responsibility, leadership, skills development, education, agriculture and community participation.</p>
 </section>
 
 <section id="vision">
-<div class="cards">
-<div class="card">
-<h3>Our Vision</h3>
-<p>A united, empowered and self-reliant generation of young people contributing to the sustainable transformation of Madi Opei.</p>
-</div>
-<div class="card">
-<h3>Our Mission</h3>
-<p>To mobilise, connect and empower young people through mentorship, skills development, productive activities and community-led initiatives.</p>
-</div>
-<div class="card">
-<h3>Our Values</h3>
-<p>Unity, integrity, accountability, inclusiveness, service, hard work and respect for one another.</p>
-</div>
-</div>
+  <div class="cards">
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>A united, empowered and self-reliant generation of young people contributing to the sustainable transformation of Madi Opei.</p>
+    </div>
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>To mobilise, connect and empower young people through mentorship, skills development, productive activities and community-led initiatives.</p>
+    </div>
+    <div class="card">
+      <h3>Our Values</h3>
+      <p>Unity, integrity, accountability, inclusiveness, service, hard work and respect for one another.</p>
+    </div>
+  </div>
 </section>
 
 <section id="activities">
-<h2>Our Activities and Programmes</h2>
-<div class="cards">
-<div class="card">
-<h3>Youth Empowerment</h3>
-<p>Promoting leadership, mentorship, life skills, talent development and meaningful youth participation in community affairs.</p>
-</div>
-<div class="card">
-<h3>Agriculture and Food Security</h3>
-<p>Encouraging productive agriculture through cassava growing, planned coffee production and simsim cultivation to strengthen household food security and livelihoods.</p>
-</div>
-<div class="card">
-<h3>Education and Skills</h3>
-<p>Encouraging access to education, practical skills, knowledge sharing and opportunities for young people to develop their potential.</p>
-</div>
-<div class="card">
-<h3>Community Development</h3>
-<p>Mobilising young people to participate in voluntary service, environmental cleanliness, social support and local development initiatives.</p>
-</div>
-<div class="card">
-<h3>Sports and Unity</h3>
-<p>Supporting the Madi Opei Premier League in partnership with Madi Opei Development Association (MODA) and the Office of Ker Kal Kwaro Madi Opei. The league brings communities together and promotes youth talent and teamwork.</p>
-</div>
-<div class="card">
-<h3>Annual Youth Gathering</h3>
-<p>Creating a platform for young people and community members to meet, share ideas, celebrate achievements and discuss the future of Madi Opei.</p>
-</div>
-</div>
-</section>
-
-<section id="leadership">
-<h2>Meet Our Association Leadership</h2>
-<p>Our leadership team serves the association through commitment, responsibility and collective action.</p>
-<div class="cards">
-
-<div class="card profile">
-<img src="file_000000005c908208aeeeb37bd90e6a89.png" alt="Rubangakene Philips, Chairperson">
-<h3>Rubangakene Philips</h3>
-<p><strong>Chairperson</strong></p>
-<p>Civil Engineer and youth leader committed to community transformation, unity and youth empowerment.</p>
-</div>
-
-<div class="card profile">
-<div class="placeholder">Photo coming soon</div>
-<h3>Olak Mercy</h3>
-<p><strong>Vice Chairperson</strong></p>
-</div>
-
-<div class="card profile">
-<div class="placeholder">Photo coming soon</div>
-<h3>Ojara Henry</h3>
-<p><strong>Treasurer</strong></p>
-</div>
-
-<div class="card profile">
-<img src="IMG-20261103-WA0152.jpg" alt="Atimango Sicola">
-<h3>Atimango Sicola</h3>
-<p><strong>Secretary</strong></p>
-</div>
-
-<div class="card profile">
-<img src="IMG-20261103-WA0151.jpg" alt="Ajalo Gloria">
-<h3>Ajalo Gloria</h3>
-<p><strong>Vice Secretary</strong></p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>Message from the Chairperson</h2>
-<div class="chair">
-<img src="file_000000005c908208aeeeb37bd90e6a89.png" alt="Chairperson Rubangakene Philips">
-<div>
-<p>It is my honour to serve as Chairperson of Madi Opei Youth Association. My vision is to see a generation of young people who are united, responsible, skilled and actively involved in transforming their community.</p>
-<p>I come from Orogo A Cell, Kal Parish, within Madi Opei Town Council. This is my village and an important part of my identity. My commitment, however, extends to all young people of Madi Opei and the surrounding communities.</p>
-<p>I believe our future depends on what we build together today. Through unity, agriculture, education, sports, mentorship and meaningful participation, we can create opportunities and a better future for the next generation.</p>
-<p>Let us work together, support one another and turn our shared vision into action.</p>
-<p><strong>Rubangakene Philips</strong><br>Chairperson, MOYA</p>
-</div>
-</div>
-</section>
-
-<section>
-<h2>Our Mentor</h2>
-<div class="mentor">
-<div class="chair">
-<img src="IMG-20261103-WA0099.jpg" alt="Jameson Dennish Onekalit">
-<div>
-<h3>Jameson Dennish Onekalit</h3>
-<p><strong>Mentor, Madi Opei Youth Association</strong></p>
-<p>MOYA recognises the importance of mentorship, guidance and experience in shaping the next generation. Our mentor supports the association by encouraging young people to believe in their potential, learn from experience and contribute positively to society.</p>
-<p><strong>Contact:</strong> +256 774 240242</p>
-</div>
-</div>
-</div>
-</section>
-
-<section id="contact">
-<h2>Get Involved with MOYA</h2>
-<p>Are you a young person or community member interested in contributing to the development of Madi Opei? We welcome your ideas, participation and support.</p>
-<p><strong>Location:</strong> Madi Opei Town Council, Lamwo District, Uganda</p>
-<p><strong>Association contact:</strong> 0789 813592</p>
-<p><strong>Treasurer contact:</strong> 0783 502982</p>
-<a class="button" href="https://wa.me/256789813592">Contact MOYA on WhatsApp</a>
-</section>
-
-<footer>
-<p><strong>MADI OPEI YOUTH ASSOCIATION (MOYA)</strong></p>
-<p>Empowering the Future</p>
-<p>United for a better and more prosperous Madi Opei.</p>
-<p>&copy; 2026 Madi Opei Youth Association. All rights reserved.</p>
-</footer>
-
-
-<section id="mentor-speech">
-<h2>Our Mentor's Keynote Address</h2>
-<h3>A Message to the Young People of Madi Opei</h3>
-<p><strong>Keynote Address – 27 December 2025</strong></p>
-<p><strong>By Jamesson Dennish Onekalit</strong></p>
-
-<p>Dear young people, in whose hands the future of Madi Opei lies, allow me to express how grateful and humbled I am to be invited to speak at this historic event alongside such distinguished keynote speakers.</p>
-
-<p>My name is Jamesson Dennish Onekalit. I was born and raised in Madi Opei, and I come from Wigweng Lobiri. I walked 12 kilometres every day, barefoot, from Wigweng to attend Madi Opei Primary School.</p>
-
-<p>Currently, I work as Regional Technical Advisor for Cash and Markets in Crisis Situations, East Africa, with the International Rescue Committee (IRC).</p>
-
-<p>My message touches on three key areas:</p>
-<ul>
-<li>The Power of Humble Beginnings</li>
-<li>Self-Discovery</li>
-<li>The Heart of Gratitude</li>
-</ul>
-
-<h3>1. The Power of Humble Beginnings</h3>
-<p>We all come from somewhere. For some, it is a place of comfort and privilege. For the majority of others, it is a place of struggle and hardship. But where we start does not define where we will end up.</p>
-
-<p>Many of us started with nothing, and I know my story is not very different from many of your stories. Maybe you grew up in a small village of Lobiri like me. Maybe you started your education in Kwoncok without attending kindergarten.</p>
-
-<p>Some of you may come from Lawiye Oduny, Wanglango, Latolim, Madi Opei Primary School or perhaps Kirombe. A few may have grown up in crowded cities.</p>
-
-<p>Some of you may have had to work all sorts of jobs just to make ends meet. (Share personal story.) But we did not, and should not, allow our circumstances to define us. Instead, we must use them as fuel to drive us forward.</p>
-
-<p>I want you to remember today that you can become anything you want to be, as long as you set your mind to it.</p>
-
-<p><strong>[DJ plays: "I Know I Can, Be Where I Wanna Be…"]</strong></p>
-
-<p>Humble beginnings teach us valuable lessons. They teach us resilience, determination and gratitude. They remind us that success is not about where we start, but about where we are headed.</p>
-
-<p>Your humble beginnings are part of your story, but they do not have to be the end of it. Use them as a stepping stone to something greater.</p>
-
-<p>As Nelson Mandela once said:</p>
-<blockquote>"The greatest glory in living lies not in never falling, but in rising every time we fall."</blockquote>
-<p>Let us rise, let us grow, and let us make our mark as Madi Opei Youth Association.</p>
-
-<h3>2. Self-Discovery</h3>
-<p>Who are you, really? It is a question we have all asked ourselves at some point, or perhaps struggled to find an answer to.</p>
-
-<p>Self-discovery is a journey, not a destination. It is about peeling back the layers, confronting our fears and embracing our true selves.</p>
-
-<p>We are often defined by our roles: student, friend, partner or employee. But who are you outside those labels? What makes your heart sing? What keeps you awake at night?</p>
-
-<p>Self-discovery is about exploring those questions. It is about taking risks, trying new things and learning from our mistakes. I challenge you today, this 27th day of December 2025, not to be afraid of making mistakes.</p>
-
-<p>It is about embracing our strengths and weaknesses and using them to fuel our growth.</p>
-
-<p>As Carl Jung said:</p>
-<blockquote>"Your vision will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes."</blockquote>
-
-<p>Take time to look inside. Explore your passions, perhaps in sports, academia like Professor Kennedy and others, or in business like Dangote and the Shudairs of this world.</p>
-
-<p>It is okay not to have all the answers. The journey of self-discovery is lifelong, and it is worth taking. You might just discover a part of yourself you never knew existed.</p>
-
-<h3>3. The Heart of Gratitude</h3>
-<p>Giving thanks is not just a phrase we say around the holidays; it is a mindset. When we cultivate gratitude, we shift our focus from what is lacking to what is already abundant in our lives.</p>
-
-<p>We often take the good things for granted, focusing on what we do not have instead of appreciating what we already have.</p>
-
-<p>Gratitude helps us see the beauty in everyday moments, the kindness of strangers and the love of those around us.</p>
-
-<p>It is not just about big things. It is also about the little things: a warm cup of tea on a chilly morning, a good conversation with a friend, a pat on the back, a little hug or a beautiful sunset.</p>
-
-<p>As Melody Beattie said:</p>
-<blockquote>"Gratitude unlocks the fullness of life. It turns what we have into enough, and more."</blockquote>
-
-<p>Let us make gratitude a habit. Let us appreciate the journey, not just the destination. And let us spread that gratitude to those around us. Let us appreciate the association leadership and members, the people who have supported us throughout this journey, and everything else in between.</p>
-
-<p>As for me, my heart is full of pride, love and gratitude for this incredible opportunity. I will continue to be part of you whenever you need me.</p>
-
-<p><strong>With gratitude. 🙏</strong></p>
-<h3>Apwoyo Matek Adada</h3>
-<p><strong>Jamesson Dennish Onekalit</strong><br>Humanitarian and Regional Technical Advisor – Cash and Markets, East Africa<br>International Rescue Committee (IRC)</p>
+  <h2>Our Activities and Programmes</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Youth Empowerment</h3>
+      <p>Promoting leadership, mentorship, life skills, talent development and meaningful youth participation in community affairs.</p>
+    </div>
+    <div class="card">
+      <h3>Agriculture and Food Security</h3>
+      <p>Encouraging productive agriculture through cassava growing, planned coffee production and simsim cultivation to strengthen household food security and livelihoods.</p>
+    </div>
+    <div class="card">
+      <h3>Education and Skills</h3>
+      <p>Encouraging access to education, practical skills, knowledge sharing and opportunities for young people to develop their potential.</p>
+    </div>
+    <div class="card">
+      <h3>Community Development</h3>
+      <p>Mobilising young people to participate in voluntary service, environmental cleanliness, social support and local development initiatives.</p>
+    </div>
+    <div class="card">
+      <h3>Sports and Unity</h3>
+      <p>Supporting community sports and the Madi Opei Premier League in partnership with MODA and the Office of Ker Kal Kwaro Madi Opei.</p>
+    </div>
+    <div class="card">
+      <h3>Annual Youth Gathering</h3>
+      <p>Creating a platform for young people and community members to meet, share ideas, celebrate achievements and discuss the future of Madi Opei.</p>
+    </div>
+  </div>
 </section>
 
 <section id="premier-league">
-<h2>Madi Opei Premier League</h2>
-<p>The Madi Opei Premier League is a community football initiative bringing together <strong>16 clubs</strong> to promote sporting talent, discipline, unity, teamwork and peaceful coexistence among young people.</p>
+  <h2>Madi Opei Premier League</h2>
+  <div class="event">
+    <p>The Madi Opei Premier League is a community football initiative bringing together <strong>16 clubs</strong> to promote sporting talent, discipline, unity, teamwork and peaceful coexistence among young people.</p>
+    <p>The initiative is supported through collaboration between:</p>
+    <ul>
+      <li>Madi Opei Youth Association (MOYA)</li>
+      <li>Madi Opei Development Association (MODA)</li>
+      <li>Office of Ker Kal Kwaro Madi Opei</li>
+    </ul>
+    <h3>Our Objectives</h3>
+    <ul>
+      <li>Identify and nurture football talent among young people.</li>
+      <li>Promote unity and peaceful relationships across Madi Opei communities.</li>
+      <li>Encourage discipline, teamwork and positive youth engagement.</li>
+      <li>Build a sustainable community sports programme.</li>
+    </ul>
+    <h3>Call for Support</h3>
+    <p>We invite individuals, businesses, organisations, development partners and friends of Madi Opei to support the Premier League.</p>
+    <p>Support may include financial contributions, footballs, jerseys, sports equipment, first-aid supplies, match organisation and other essential resources.</p>
+    <p><strong>All contributions should be coordinated through the recognised Madi Opei Premier League Management Committee to promote transparency and accountability.</strong></p>
+    <p>The partnership Memorandum of Understanding (MOU) will be made available on this website once officially uploaded.</p>
+  </div>
+</section>
 
-<p>The league is supported through collaboration between Madi Opei Youth Association (MOYA), Madi Opei Development Association (MODA) and the Office of Ker Kal Kwaro Madi Opei.</p>
+<section id="leadership">
+  <h2>Meet Our Association Leadership</h2>
+  <p>Our leadership team serves the association through commitment, responsibility and collective action.</p>
+  <div class="cards">
+    <div class="card profile">
+      <img src="file_000000005c908208aeeeb37bd90e6a89.png" alt="Rubangakene Philips, Chairperson">
+      <h3>Rubangakene Philips</h3>
+      <p><strong>Chairperson</strong></p>
+      <p>Civil Engineer and youth leader committed to community transformation, unity and youth empowerment.</p>
+    </div>
+    <div class="card profile">
+      <div class="placeholder">Photo coming soon</div>
+      <h3>Olak Mercy</h3>
+      <p><strong>Vice Chairperson</strong></p>
+    </div>
+    <div class="card profile">
+      <div class="placeholder">Photo coming soon</div>
+      <h3>Ojara Henry</h3>
+      <p><strong>Treasurer</strong></p>
+    </div>
+    <div class="card profile">
+      <img src="IMG-20261103-WA0152.jpg" alt="Atimango Sicola">
+      <h3>Atimango Sicola</h3>
+      <p><strong>Secretary</strong></p>
+    </div>
+    <div class="card profile">
+      <img src="IMG-20261103-WA0151.jpg" alt="Ajalo Gloria">
+      <h3>Ajalo Gloria</h3>
+      <p><strong>Vice Secretary</strong></p>
+    </div>
+  </div>
+</section>
 
-<h3>Our Objectives</h3>
-<ul>
-<li>Identify and nurture football talent among young people.</li>
-<li>Promote unity and peaceful relationships across Madi Opei communities.</li>
-<li>Encourage discipline, teamwork and positive youth engagement.</li>
-<li>Build a sustainable community sports programme.</li>
-</ul>
+<section id="chairperson-message">
+  <h2>Message from the Chairperson</h2>
+  <div class="chair">
+    <img src="file_000000005c908208aeeeb37bd90e6a89.png" alt="Chairperson Rubangakene Philips">
+    <div>
+      <p>It is my honour to serve as Chairperson of Madi Opei Youth Association. My vision is to see a generation of young people who are united, responsible, skilled and actively involved in transforming their community.</p>
+      <p>I come from Orogo A Cell, Kal Parish, within Madi Opei Town Council. This is my village and an important part of my identity. My commitment, however, extends to all young people of Madi Opei and the surrounding communities.</p>
+      <p>I believe our future depends on what we build together today. Through unity, agriculture, education, sports, mentorship and meaningful participation, we can create opportunities and a better future for the next generation.</p>
+      <p>Let us work together, support one another and turn our shared vision into action.</p>
+      <p><strong>Rubangakene Philips</strong><br>Chairperson, MOYA</p>
+    </div>
+  </div>
+</section>
 
-<h3>Call for Support</h3>
-<p>We invite individuals, businesses, organisations, development partners and friends of Madi Opei to support the Premier League.</p>
-<p>Support may be in the form of financial contributions, footballs, jerseys, sports equipment, first-aid supplies, match organisation and other essential resources.</p>
-<p><strong>All contributions should be coordinated through the recognised Madi Opei Premier League Management Committee to promote transparency and accountability.</strong></p>
-<p>The partnership MOU will be made available on this website once officially uploaded.</p>
+<section id="mentor">
+  <h2>Our Mentor</h2>
+  <div class="mentor">
+    <div class="chair">
+      <img src="IMG-20261103-WA0099.jpg" alt="Jamesson Dennish Onekalit">
+      <div>
+        <h3>Jamesson Dennish Onekalit</h3>
+        <p><strong>Mentor, Madi Opei Youth Association</strong></p>
+        <p>MOYA recognises the importance of mentorship, guidance and experience in shaping the next generation. Our mentor supports the association by encouraging young people to believe in their potential, learn from experience and contribute positively to society.</p>
+        <p><strong>Professional role:</strong> Humanitarian and Regional Technical Advisor – Cash and Markets, East Africa, International Rescue Committee (IRC).</p>
+        <p><strong>Contact:</strong> +256 774 240242</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mentor-speech">
+  <h2>Our Mentor's Keynote Address</h2>
+  <div class="speech">
+    <h3>A Message to the Young People of Madi Opei</h3>
+    <p><strong>Keynote Address – 27 December 2025</strong></p>
+    <p><strong>By Jamesson Dennish Onekalit</strong></p>
+
+    <p>Dear young people, in whose hands the future of Madi Opei lies, allow me to express how grateful and humbled I am to be invited to speak at this historic event alongside such distinguished keynote speakers.</p>
+
+    <p>My name is Jamesson Dennish Onekalit. I was born and raised in Madi Opei, and I come from Wigweng Lobiri. I walked 12 kilometres every day, barefoot, from Wigweng to attend Madi Opei Primary School.</p>
+
+    <p>Currently, I work as Regional Technical Advisor for Cash and Markets in Crisis Situations, East Africa, with the International Rescue Committee (IRC).</p>
+
+    <p>My message touches on three key areas:</p>
+    <ul>
+      <li>The Power of Humble Beginnings</li>
+      <li>Self-Discovery</li>
+      <li>The Heart of Gratitude</li>
+    </ul>
+
+    <h3>1. The Power of Humble Beginnings</h3>
+    <p>We all come from somewhere. For some, it is a place of comfort and privilege. For the majority of others, it is a place of struggle and hardship. But where we start does not define where we will end up.</p>
+
+    <p>Many of us started with nothing, and I know my story is not very different from many of your stories. Maybe you grew up in a small village of Lobiri like me. Maybe you started your education in Kwoncok without attending kindergarten.</p>
+
+    <p>Some of you may come from Lawiye Oduny, Wanglango, Latolim, Madi Opei Primary School or perhaps Kirombe. A few may have grown up in crowded cities.</p>
+
+    <p>Some of you may have had to work all sorts of jobs just to make ends meet. But we did not, and should not, allow our circumstances to define us. Instead, we must use them as fuel to drive us forward.</p>
+
+    <p>I want you to remember today that you can become anything you want to be, as long as you set your mind to it.</p>
+
+    <p><strong>DJ cue: “I Know I Can, Be Where I Wanna Be…”</strong></p>
+
+    <p>Humble beginnings teach us valuable lessons. They teach us resilience, determination and gratitude. They remind us that success is not about where we start, but about where we are headed.</p>
+
+    <p>Your humble beginnings are part of your story, but they do not have to be the end of it. Use them as a stepping stone to something greater.</p>
+
+    <p>As Nelson Mandela once said:</p>
+    <blockquote>“The greatest glory in living lies not in never falling, but in rising every time we fall.”</blockquote>
+
+    <p>Let us rise, let us grow, and let us make our mark as Madi Opei Youth Association.</p>
+
+    <h3>2. Self-Discovery</h3>
+    <p>Who are you, really? It is a question we have all asked ourselves at some point, or perhaps struggled to find an answer to.</p>
+
+    <p>Self-discovery is a journey, not a destination. It is about peeling back the layers, confronting our fears and embracing our true selves.</p>
+
+    <p>We are often defined by our roles: student, friend, partner or employee. But who are you outside those labels? What makes your heart sing? What keeps you awake at night?</p>
+
+    <p>Self-discovery is about exploring those questions. It is about taking risks, trying new things and learning from our mistakes. I challenge you today, this 27th day of December 2025, not to be afraid of making mistakes.</p>
+
+    <p>It is about embracing our strengths and weaknesses and using them to fuel our growth.</p>
+
+    <p>As Carl Jung said:</p>
+    <blockquote>“Your vision will become clear only when you can look into your own heart. Who looks outside, dreams; who looks inside, awakes.”</blockquote>
+
+    <p>Take time to look inside. Explore your passions, perhaps in sports, academia like Professor Kennedy and others, or in business like Dangote and the Shudairs of this world.</p>
+
+    <p>It is okay not to have all the answers. The journey of self-discovery is lifelong, and it is worth taking. You might just discover a part of yourself you never knew existed.</p>
+
+    <h3>3. The Heart of Gratitude</h3>
+    <p>Giving thanks is not just a phrase we say around the holidays; it is a mindset. When we cultivate gratitude, we shift our focus from what is lacking to what is already abundant in our lives.</p>
+
+    <p>We often take the good things for granted, focusing on what we do not have instead of appreciating what we already have.</p>
+
+    <p>Gratitude helps us see the beauty in everyday moments, the kindness of strangers and the love of those around us.</p>
+
+    <p>It is not just about big things. It is also about the little things: a warm cup of tea on a chilly morning, a good conversation with a friend, a pat on the back, a little hug or a beautiful sunset.</p>
+
+    <p>As Melody Beattie said:</p>
+    <blockquote>“Gratitude unlocks the fullness of life. It turns what we have into enough, and more.”</blockquote>
+
+    <p>Let us make gratitude a habit. Let us appreciate the journey, not just the destination. And let us spread that gratitude to those around us. Let us appreciate the association leadership and members, the people who have supported us throughout this journey, and everything else in between.</p>
+
+    <p>As for me, my heart is full of pride, love and gratitude for this incredible opportunity. I will continue to be part of you whenever you need me.</p>
+
+    <p><strong>With gratitude. 🙏</strong></p>
+    <h3>Apwoyo Matek Adada</h3>
+    <p><strong>Jamesson Dennish Onekalit</strong><br>
+    Humanitarian and Regional Technical Advisor – Cash and Markets, East Africa<br>
+    International Rescue Committee (IRC)</p>
+  </div>
 </section>
 
 <section id="annual-gathering">
-<h2>MOYA Annual Youth Gathering 2026</h2>
-<p><strong>27 December 2026 | Madi Opei</strong></p>
-<p>MOYA warmly invites all young people, community members, friends and well-wishers to the second edition of our Annual Youth Gathering.</p>
-
-<p>The gathering is an opportunity to reconnect, celebrate our identity, exchange ideas, recognise achievements and discuss the future of our community.</p>
-
-<p>We also welcome financial, material and logistical support from individuals, businesses, organisations and development partners to help make this gathering successful.</p>
-
-<h3>How You Can Support</h3>
-<ul>
-<li>Financial contributions towards event organisation.</li>
-<li>Support for sports and community activities.</li>
-<li>Materials, services and logistical assistance.</li>
-<li>Volunteering, partnerships and sharing ideas.</li>
-</ul>
-
-<p>Every contribution, whether big or small, makes a difference. Let us come together to make this gathering meaningful and impactful.</p>
+  <h2>MOYA Annual Youth Gathering 2026</h2>
+  <div class="event">
+    <p class="date">27 December 2026 | Madi Opei</p>
+    <p>MOYA warmly invites all young people, community members, friends and well-wishers to the second edition of our Annual Youth Gathering.</p>
+    <p>The gathering is an opportunity to reconnect, celebrate our identity, exchange ideas, recognise achievements and discuss the future of our community.</p>
+    <h3>Call for Support</h3>
+    <p>We welcome financial, material and logistical support from individuals, businesses, organisations and development partners to help make this gathering successful.</p>
+    <ul>
+      <li>Financial contributions towards event organisation.</li>
+      <li>Support for sports and community activities.</li>
+      <li>Materials, services and logistical assistance.</li>
+      <li>Volunteering, partnerships and sharing ideas.</li>
+    </ul>
+    <p>Every contribution, whether big or small, makes a difference. Let us come together to make this gathering meaningful and impactful.</p>
+  </div>
 </section>
 
-<section id="contact-people">
-<h2>Contact MOYA</h2>
-<p>For association information, membership, partnership, donations and support for our programmes, please contact:</p>
-
-<div class="cards">
-<div class="card">
-<h3>Rubangakene Philips</h3>
-<p><strong>Chairperson</strong></p>
-<p>0789 813592</p>
-<a class="button" href="https://wa.me/256789813592">Contact Chairperson</a>
-</div>
-
-<div class="card">
-<h3>Ojara Henry</h3>
-<p><strong>Treasurer</strong></p>
-<p>0783 502982</p>
-<a class="button" href="https://wa.me/256783502982">Contact Treasurer</a>
-</div>
-
-<div class="card">
-<h3>Jameson Dennish Onekalit</h3>
-<p><strong>Association Mentor</strong></p>
-<p>+256 774 240242</p>
-<a class="button" href="https://wa.me/256774240242">Contact Mentor</a>
-</div>
-</div>
+<section id="contact">
+  <h2>Contact MOYA</h2>
+  <p>For association information, membership, partnership, donations and support for our programmes, please contact:</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Rubangakene Philips</h3>
+      <p><strong>Chairperson</strong></p>
+      <p>0789 813592</p>
+      <a class="button" href="https://wa.me/256789813592">Contact Chairperson</a>
+    </div>
+    <div class="card">
+      <h3>Ojara Henry</h3>
+      <p><strong>Treasurer</strong></p>
+      <p>0783 502982</p>
+      <a class="button" href="https://wa.me/256783502982">Contact Treasurer</a>
+    </div>
+    <div class="card">
+      <h3>Jamesson Dennish Onekalit</h3>
+      <p><strong>Association Mentor</strong></p>
+      <p>+256 774 240242</p>
+      <a class="button" href="https://wa.me/256774240242">Contact Mentor</a>
+    </div>
+  </div>
+  <p><strong>Location:</strong> Madi Opei Town Council, Lamwo District, Uganda</p>
+  <p>We welcome your ideas, participation and support as we work together to empower the future.</p>
 </section>
+
+<footer>
+  <p><strong>MADI OPEI YOUTH ASSOCIATION (MOYA)</strong></p>
+  <p>Empowering the Future</p>
+  <p>United for a better and more prosperous Madi Opei.</p>
+  <p>&copy; 2026 Madi Opei Youth Association. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
